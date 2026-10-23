@@ -60,7 +60,7 @@
   <h2>2. How We Use Information</h2>
   <ul>
     <li>To deliver the App's core features: practice sessions, simulated exams, progress tracking, streaks, and badges</li>
-    <li>To verify premium subscription entitlement and manage free-trial periods through Apple StoreKit 2</li>
+    <li>To verify premium purchase entitlement through Apple StoreKit 2 (non-renewing access)</li>
     <li>To respond to support or feedback inquiries you send us</li>
     <li>To detect bugs and crashes using Apple's native crash-reporting mechanisms (no third-party analytics SDK by default)</li>
   </ul>
@@ -73,8 +73,8 @@
   </ul>
   <p>We do <strong>not</strong> integrate Google Analytics, Firebase, Amplitude, Mixpanel, or any other third-party analytics or advertising SDK into the App.</p>
 
-  <h2>4. Subscription & Purchases</h2>
-  <p>All payments are handled by Apple through StoreKit. When you purchase a weekly, monthly, or yearly subscription, Apple processes the payment and returns a transaction identifier. We store only this identifier and the resulting unlock state (premium vs. free) locally on your device and in Apple's signed transaction records. We never see your credit card number, CVV, or billing address.</p>
+  <h2>4. Non-Renewing Access & Purchases</h2>
+  <p><strong>All Pro access is non-renewing.</strong> You pay once for a fixed period (1 month, 3 months, or 1 year) and access expires automatically at the end of that period — you will not be charged again unless you buy another plan. All payments are handled by Apple through StoreKit. When you purchase a monthly, 3-month, or yearly non-renewing plan, Apple processes the payment and returns a transaction identifier. We store only this identifier and the resulting unlock state (premium vs. free) locally on your device and in Apple's signed transaction records. We never see your credit card number, CVV, or billing address.</p>
 
   <h2>5. Data Retention</h2>
   <p>Local data (progress, bookmarks, exam history) stays on your device until you reset it from within the App or delete the App. We do not maintain our own server database of user study activity.</p>
